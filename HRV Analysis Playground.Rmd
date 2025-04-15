@@ -1,0 +1,26 @@
+---
+title: "HRV Analysis Playground"
+author: "Tang-Ni, Chuang"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(RHRV)
+```
+
+## 📁 Load RR Intervals
+
+This section loads RR data from one participant, 4025.
+
+```{r load-rr}
+hrv.data <- CreateHRVData()
+hrv.data <- LoadBeatAscii(hrv.data, "data/4025.txt")
+summary(hrv.data)
+```
+
+# Run descriptives of 4025
+```{r}
+# Your code
+```
